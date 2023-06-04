@@ -9,7 +9,7 @@
     font-size: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+/* The sidebar css starts here */
 .sidebar {
     grid-row: 1 / 3;
     background-color: rgb(71, 54, 224);
@@ -45,22 +45,83 @@ svg {
     width: 25px;
     fill: white;
 }
-
+/* The header css starts here */
 .header {
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
 
+.icon-header {
+    width: 25px;
+    fill: black;
+}
+
+.top-nav-left > input {
+    border-radius: 20px;
+    background-color: rgb(179, 182, 190);
+    border-style: none;
+}
+
+.top-nav-left > div {
+    justify-self: center
+} 
+
+img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.big-photo{
+    width: 5rem;
+    height: 5rem;
+}
+
 .top-nav, .down-nav {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 40px;
 }
 
 .top-nav-left {
     display: grid;
-    grid-template-columns: 1fr  1fr;
+    grid-template-columns: 40px  1fr;
+    align-items: center;
 }
 
+.top-nav-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.down-nav-left {
+    display: grid;
+    grid-template-columns: 1fr  4fr;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.down-nav-right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: center;
+}
+
+button {
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    border-style: none;
+    height: 30px;
+    width: 80px;
+}
+
+.header input {
+    height: 20px;
+}
 
 
 
